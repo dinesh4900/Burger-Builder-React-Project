@@ -20,14 +20,16 @@ const buildControls =(props) => (
         {controls.map(ctrl => ( 
             <BuildControl 
                 key={ctrl.label}    // to access the key and label
-                label={ctrl.label}
+                
                 added={() => props.ingredientAdded(ctrl.type)}      // an arrow function to represent item which should be added
                 removed={() => props.ingredientRemoved(ctrl.type)}   // an arrow function to represent item which should be removed
 
                 // here we use disabled display the button as disabled.
                 // we use control type to access the disabled information.
                 // the structure of diasbled info is in boolean format respectively.
-                disabled={props.disabled[ctrl.type]}  />             
+                disabled={props.disabled[ctrl.type]}
+                
+                label={ctrl.label} />             
         ))}
          {/**order now button
           *
