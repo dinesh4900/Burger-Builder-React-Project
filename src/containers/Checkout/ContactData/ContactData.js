@@ -21,7 +21,7 @@ class ContactData extends Component{
         event.preventDefault();
         this.setState({loading: true});
         const order = {
-            ingredients: this.state.ingredients,
+            ingredients: this.props.ingredients,
             price: this.props.price,
             customer:{
                 name: 'dinesh',
@@ -59,7 +59,7 @@ class ContactData extends Component{
         return(
             <div className="ContactData">
                 <h4>enter your contact data</h4>
-                
+                {form}
             </div>
         )
     }
