@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../Logo/Logo';
+import Logo from '../../Layout/Logo/Logo'
 import NavigationItems from '../../Navigation/NavigationItems/NavigationItems';
 import './SideDrawer.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';

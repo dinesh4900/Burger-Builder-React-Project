@@ -41,7 +41,7 @@ class ContactData extends Component{
                 this.props.history.push('/')
             })
             .catch(error => {
-                this.setState({loading: false})
+                this.setState({loading: false});
             }); 
     }
     render(){
@@ -58,7 +58,7 @@ class ContactData extends Component{
         }
         return(
             <div className="ContactData">
-                <h4>enter your contact data</h4>
+                <h4>E nter your contact data</h4>
                 {form}
             </div>
         )

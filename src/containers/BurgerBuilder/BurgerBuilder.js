@@ -113,13 +113,13 @@ class BurgerBuilder extends Component{
             queryParms.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
         }
 
-        queryParms.push('price' + this.state.totalPrice);
+        queryParms.push('price=' + this.state.totalPrice);
 
         const queryString = queryParms.join('&');
         this.props.history.push({
             pathname: '/checkout',
             search: '?' + queryString
-        })
+        });
     }
 
 
